@@ -24,6 +24,7 @@ struct RBTNode {
 class RedBlackTree {
 	
 	public:
+		void PrivateTests();
 		RedBlackTree();
 		RedBlackTree(int newData);
 		RedBlackTree(const RedBlackTree &rbt);
@@ -33,11 +34,13 @@ class RedBlackTree {
 		string ToPostfixString() const { return ToPostfixString(root);};
 
 		void Insert(int newData);
-
+		
 		bool Contains(int data) const ;
 		size_t Size() const {return numItems;};
 		int GetMin() const;
 		int GetMax() const;
+
+		
 		
 	
 	private: 
